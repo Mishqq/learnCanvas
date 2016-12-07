@@ -9,6 +9,7 @@ var gulp = require('gulp'),
 	browserSync = require("browser-sync"),
 	reload = browserSync.reload,
 	ngAnnotate = require('gulp-ng-annotate'),
+	through = require('through2'),
 	config = require('../config');
 
 gulp.task('js:vendor', () => {
@@ -31,7 +32,7 @@ gulp.task('js:build', function () {
 	}))
 	.pipe(concat('app.js'))
 	.pipe(sourcemaps.init())
-	.pipe(uglify())
+	.pipe(uglify({}))
 	.pipe(sourcemaps.write())
 	.pipe(gulp.dest(config.build.js))
 	.pipe(reload({stream: true}));

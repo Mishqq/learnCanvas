@@ -8,14 +8,41 @@
 	<link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
-	<canvas id="canvas"
-			width="300"
-			height="300"
-			style="border: 1px solid;"></canvas>
+	<div class="l-block">
+		<div class="l-block__title">Lesson 1</div>
+		<div class="l-block__link">
+			<a href="https://www.youtube.com/watch?v=iGCMkmnm89M&list=PLf0k8CBUad-sHxpoBHLHIr3CwWfSmOYZR&index=1">
+				Основное понятие Игрового цикла, JavaScript requestAnimationFrame. Ссылки на функции
+			</a>
+		</div>
+		<div class="l-block__content">
+			<div class="l-block__result">
+				<canvas id="canvas"
+						width="300"
+						height="300"
+						style="border: 1px solid;"></canvas>
+			</div>
+		</div>
+	</div>
 
-	<br>
-
-	<a href="" class="changeSong">change song</a>
+	<div class="l-block">
+		<div class="l-block__title">Lesson 2</div>
+		<div class="l-block__link">
+			<a href="https://www.youtube.com/watch?v=_hlY2QHYfYU&index=2&list=PLf0k8CBUad-sHxpoBHLHIr3CwWfSmOYZR">
+				Взгляд на музыку в игровом приложении. Audio HTML5. Основы создания игр на JavaScript
+			</a>
+		</div>
+		<div class="l-block__content">
+			<div class="l-block__result">
+				<div>Press "Esc" to stop music</div>
+				<a href="/" onclick="songCtrl(event, 'stop')">stop song</a>
+				<br>
+				<a href="/" onclick="songCtrl(event, 'song1')">start song 1</a>
+				<br>
+				<a href="/" onclick="songCtrl(event, 'song2')">start song 2</a>
+			</div>
+		</div>
+	</div>
 
 	<script src="build/js/vendor.js"></script>
 	<script src="build/js/app.js"></script>
