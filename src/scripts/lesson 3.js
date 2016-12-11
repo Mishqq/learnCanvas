@@ -2,8 +2,6 @@
 	let canvas = document.getElementById('canvas_3'),
 		context = canvas.getContext('2d');
 
-	let width = 100, height = 100, x = 0;
-
 	let cop1 = loadImage('build/images/sprite.png', 16, 30);
 	let cop2 = loadImage('build/images/sprite.png', 16, 30);
 	let cop3 = loadImage('build/images/sprite.png', 16, 30);
